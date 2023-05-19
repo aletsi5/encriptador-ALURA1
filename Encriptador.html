@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="es-MX">
+    <head>
+        <meta charset="UTF=8">
+        <meta name="viewport" content="width-device-width">
+        <link rel="stylesheet" href="Estilos_Encriptador.css">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="shortcut icon" href="Imagenes/Cifrar.png">
+        <title>Encriptador aletsi5</title>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img src="Imagenes/LOGO+ALURA.png" class="logo">
+        </header>
+        <main class="contenedor">
+            <section>
+                <textarea cols="40" rows="10" placeholder="Ingrese el texto aquí..." class="texto"></textarea>
+                <div>
+                    <img src="Imagenes/advertencia.png" class="advertencia_logo">
+                    <h3 class="advertencia">No incluya acentos, números, ni caracteres especiales</h3>
+                </div>
+                <div class="botones">
+                    <button onclick="encriptar()" class="encriptar">Encriptar</button>
+                    <button onclick="desencriptar()" class="desencriptar">Desencriptar</button>
+                </div>
+            </section>
+            <section class="flotante">
+                <img src="Imagenes/buscando.png" class="buscando">
+                <textarea cols="30" rows="10" class="mensaje" id="mensaje"></textarea>
+                <h4 class="sintexto">No se ha ingresado un texto para encriptar todavia</h4>
+                <p class="ingrese">Ingrese un texto para encriptar o desencriptar</p>
+                <div id="boton" class="boton">
+                    <button id="copiar" onclick="copiar()" class="copiar">Copiar</button>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <h4 class="piedepagina">Realizado por: Mario Alexis Galan Rivera - Challenge: Encriptador 
+            <br>Oracle, Next Education G5 2023</h4>
+        </footer>
+        <script src="Funciones_Encriptador.js"></script>
+    </body>
+</html>
