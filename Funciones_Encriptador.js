@@ -71,6 +71,3 @@ function copiar() {
         console.error(err); 
     });
 }
-
-<il/>
-<al/>
